@@ -1,3 +1,8 @@
-theme: jekyll-theme-architect,
-title: "React Apps Collection",
-description: "Collection of apps created using react for learning perspective. Feel free to look, explore and fork the repo for learning/enhancements perspective."
+theme: jekyll-theme-architect
+title: React Apps Collection
+description: Collection of apps created using react for learning perspective. Feel free to look, explore and fork the repo for learning/enhancements perspective.
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - kramdown-parser-gfm

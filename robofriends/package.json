@@ -8,13 +8,13 @@
     "react-redux": "^7.0.1",
     "react-scripts": "2.1.8",
     "redux": "^4.0.1",
+    "redux-logger": "^3.0.6",
     "redux-thunk": "^2.3.0",
-    "tachyons": "^4.11.1",
-    "redux-logger": "^3.0.6"
+    "tachyons": "^4.11.1"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "PUBLIC_URL=./ react-scripts build && rm -rf ../examples/robofriends && mv build/ ../examples/robofriends/",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
