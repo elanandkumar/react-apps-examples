@@ -24,3 +24,5 @@ yarn-error.log*
 
 _site
 .sass-cache
+.cache
+parcel-react-kit/dist
