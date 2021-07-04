@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import CardList from "../components/CardList";
 import Scroll from "../components/Scroll";
 import SearchBox from "../components/SearchBox";
-import ErrorBoundry from "../components/ErrorBoundry";
+import ErrorBoundary from "../components/ErrorBoundary";
 import "./App.css";
 import { setSearchText, requestRobots } from '../actions';
 
@@ -43,9 +43,9 @@ class App extends React.PureComponent {
         <h1 className="f1">RoboFriends</h1>
         <SearchBox searchChange={onSearchChange} />
         <Scroll>
-          <ErrorBoundry>
+          <ErrorBoundary>
             <CardList robots={filteredRobots} />
-          </ErrorBoundry>
+          </ErrorBoundary>
         </Scroll>
       </div>
     );
